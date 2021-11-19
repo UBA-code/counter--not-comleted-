@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f1f8fd;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.container h1 {
+  color: #0f1f24;
+  font-size: 60px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+.container .input-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .number-input {
+  margin: 0 20px;
+  width: fit-content;
+  padding: 10px;
+  border: none;
+  background-color: #f1f8fd;
+  transition: 0.1s linear background-color;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  width: 150px;
+}
+.container .number-input:hover {
+  background-color: rgba(255, 255, 255, 0.507);
+}
+.container .number-input:focus {
+  outline: none;
+  background-color: #fff;
+}
+.container .input-area .decrease-btn,
+.container .input-area .increase-btn,
+.container .Reset-btn,
+.container .Start-btn {
+  color: #0f1f24;
+  border: 2px solid #0f1f24;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.1s linear;
+  transition-property: background-color, color;
+}
+.container .input-area .decrease-btn:hover,
+.container .input-area .increase-btn:hover {
+  background-color: #e3e7e9;
+}
+.container .Start-btn:hover {
+  background-color: #28a745;
+  color: white;
+}
+.container .counter-area {
+  color: #0f1f24;
+  margin: 30px 0;
+  width: fit-content;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .Reset-btn:hover {
+  background-color: #dc3545;
+  color: white;
+}
+.container .Reset-btn,
+.container .Start-btn {
+  width: 80px;
+  margin: 10px 0;
+}
+.container .counter-area .counter-spans {
+  display: flex;
+  font-size: 30px;
+}
